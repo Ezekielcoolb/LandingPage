@@ -1,38 +1,263 @@
 .App {
-  text-align: center;
+  background: #000000;
+  
+}
+h1 {
+  font-size: 35px;
+  max-width: 350px;
+  color:white
+}
+h2 {
+  font-size: 30px;
+ font-weight: 700;
+ color:white
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #e1dede;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
   color: white;
+  width: 100%; /* Use 100% instead of 100vw */
+  display: flex;
+  justify-content: flex-end;
+  background: #000000;
+  z-index: 1000;
+  overflow:hidden;
+  
+  padding: 10px 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  #navbar {
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      padding-right: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  #navbar li {
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+     
   }
-}
+  /* Nav */
+
+  
+  #navbar li a {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+      transition: 0.3s ease-in-out
+     
+  }
+
+  #navbar li a:hover{
+      color: #FCE82F;
+  }
+
+  .nav-mobile{
+      display: none;
+  }
+  .nav-mobile {
+      color: white;
+      align-items: center;
+  }
+
+  @media (max-width: 991px)  {
+      .nav {
+          padding: 10px 20px !important;
+      }
+      #navbar {
+          display: flex;
+          flex-direction: column;
+          align-items:flex-start !important;
+          justify-content: flex-start !important;
+          position: fixed;
+          top: 50px;
+          right: -300px;
+          width: 300px;
+          height: 100vh;
+          background: #000000;
+          color: white;
+          box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+          padding: 40px 0 0 10px;
+          transition: 0.3s ease-in-out;
+      }
+
+      #navbar.active {
+          right: 0px;
+      }
+
+      #navbar li a {
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 600;
+          color: white;
+          transition: 0.3s ease-in-out
+         
+      }
+      .nav-mobile{
+          display: block;
+          margin-right: 30px;
+      }
+
+      #navbar li {
+          margin-bottom: 25px;
+      }
+      .nav-mobile {
+          cursor: pointer;
+      }
+  
+  }
+
+  @media (max-width: 767px) {
+      .nav-hide {
+          display: none !important;
+      }
+  }
+
+  .water-mark-img {
+    height: "";
+    width: 15%;
+    object-fit: cover;
+    display: block;
+    object-position: top
+  }
+
+  .header-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .col-1 {
+    width: 50%;
+  }
+  .link-div {
+    display:  flex;
+    justify-content: space-between;
+    max-width: 180px;
+    margin-top: 40px;
+  }
+
+  .link-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FCE82F;
+  }
+  .image {
+    width: 70%;
+    height: '';
+    object-fit: cover;
+  }
+  .image-fb {
+    width: 40%;
+    height: '';
+    object-fit: cover;
+  }
+  .vector-div{
+    position: relative;
+    width: 400px;
+    height: 370px;
+  }
+  .vector-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:  1;
+  }
+  .rectangle92-img {
+    position: absolute;
+    top: -28px;
+    left: 0px;
+    width: 385px;
+    height: 360px;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  button {
+    
+  width: 250px;
+  height: 60px;
+  background: #FCE82F;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  cursor: pointer;
+  }
+
+  .about-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-border {
+    /* Rectangle 61 */
+
+
+width: 146px;
+height: 9px;
+left: 647px;
+top: 848px;
+clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 33%, 0% 38%);
+background: #FCE82F;
+
+  }
