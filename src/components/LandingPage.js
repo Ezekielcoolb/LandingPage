@@ -96,10 +96,10 @@ const LandingPage = () => {
                     </div>
                     <div className="about-col">
                         <p style={{ color: "white", fontWeight: "500" }}>We focus on value and excellence</p>
-                        <p>We are focused on providing products which deliver demonstrably good value of our clients and
+                        <p style={{marginTop: "20px"}}>We are focused on providing products which deliver demonstrably good value of our clients and
                             end-customers-be that a specific return, outperforming an index or achieving returns at lower risk.
                         </p>
-                        <p>Through achieving value for the clients whose assests we manage, efficiently controlling costs, effectiveness
+                        <p style={{marginTop: "20px"}}>Through achieving value for the clients whose assests we manage, efficiently controlling costs, effectiveness
                             and effiency, we deliver value to our shareholders and wider stakeholders.
                         </p>
                         <button>Work with Us</button>
