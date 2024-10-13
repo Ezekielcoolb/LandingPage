@@ -145,7 +145,7 @@ const LandingPage = () => {
                 </div>
                 <div className="portfolio-container">
                     <div className="portfolio-link">
-                        <ul className="portfolio-link">
+                        <ul >
                             {['All', 'Website', 'MobileApp', 'CSS', 'GitHub'].map((item, index) => (
                                 <li
                                     key={index}
@@ -197,7 +197,7 @@ const LandingPage = () => {
                     <input></input>
                     <textarea></textarea>
                 </div>
-                <button style={{ margin: "30px 0px" }}>Send message</button>
+                <button >Send message</button>
             </div>
         </div>
     )
