@@ -31,7 +31,7 @@ const Nav = () => {
                 </div>
             </nav>
 
-            <div style={{ marginTop: "75px" }}></div>
+           
         </div>
     )
 }
