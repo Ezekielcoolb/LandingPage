@@ -17,10 +17,10 @@ const Nav = () => {
 
                 <div >
                     <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/services">Portfolio</a></li>
-                        <li><a href="/gallery">Experience</a></li>
-                        <li><a href="/blog">Contact</a></li>
+                        <li><a href="/#">About Us</a></li>
+                        <li><a href="/#">Portfolio</a></li>
+                        <li><a href="/#">Experience</a></li>
+                        <li><a href="/#">Contact</a></li>
                     </ul>
                 </div>
 
