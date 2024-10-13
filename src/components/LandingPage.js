@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const LandingPage = () => {
-    // State to keep track of which li is selected
+   
     const [activeIndex, setActiveIndex] = useState(null);
 
-    // Function to handle click and set the active index
+   
     const handleClick = (index) => {
         setActiveIndex(index);
     };

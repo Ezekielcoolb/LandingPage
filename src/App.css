@@ -1,5 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
 .App {
   background: #000000;
+ 
   
 }
 
@@ -29,17 +42,18 @@ p {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
+  overflow: hidden; 
 }
 .landing {
   margin-top: 75px;
+  width: 100% !important;
 }
 .nav {
   position: fixed;
   top: 0;
   color: white;
   width: 100%;
-  /* Use 100% instead of 100vw */
+ 
   display: flex;
   justify-content: flex-end;
   background: #000000;
@@ -252,7 +266,7 @@ button {
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
-  border: 2px solid transparent; /* Default border */
+  border: 2px solid transparent; 
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
@@ -418,7 +432,7 @@ textarea {
 
   .nav-mobile {
     display: block;
-    margin-right: 50px;
+    
   }
 
   #navbar li {
@@ -439,10 +453,7 @@ textarea {
   .nav-hide {
     display: none !important;
   }
-  .nav-mobile {
-    display: block;
-    margin-right: 65px;
-  }
+  
   .about-row {
     display: block !important;
   }
@@ -476,19 +487,19 @@ textarea {
    
   }
   .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .portfolio-container {
     overflow-x: auto;
-    white-space: nowrap; /* Prevent line breaks */
+    white-space: nowrap; 
   }
 
   .portfolio-link ul{
-    flex-wrap: nowrap; /* Prevent items from wrapping */
+    flex-wrap: nowrap; 
   }
 
   .portfolio-link li {
-    display: inline-block; /* Ensure items are in a row for scrolling */
+    display: inline-block; 
   }
 }
 @media (max-width: 660px) {
