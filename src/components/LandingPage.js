@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const LandingPage = () => {
    
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
 
    
     const handleClick = (index) => {
