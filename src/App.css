@@ -1,6 +1,6 @@
 .App {
   background: #000000;
-
+  
 }
 
 h1 {
@@ -418,7 +418,7 @@ textarea {
 
   .nav-mobile {
     display: block;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   #navbar li {
@@ -438,6 +438,10 @@ textarea {
 @media (max-width: 768px) {
   .nav-hide {
     display: none !important;
+  }
+  .nav-mobile {
+    display: block;
+    margin-right: 65px;
   }
   .about-row {
     display: block !important;
